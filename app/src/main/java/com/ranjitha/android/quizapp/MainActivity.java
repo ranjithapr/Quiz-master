@@ -68,19 +68,24 @@ public class MainActivity extends AppCompatActivity {
         if(question3_answer == R.id.question3_option3)
             total_score++;
 
-        RadioGroup question4_selection = (RadioGroup) findViewById(R.id.question4_group);
-        int question4_answer = question4_selection.getCheckedRadioButtonId();
+        CheckBox question4_selection1 = (CheckBox) findViewById(R.id.question4_option1);
+        CheckBox question4_selection2 = (CheckBox) findViewById(R.id.question4_option4);
 
-        if(question4_answer == R.id.question4_option4)
+
+        if(question4_selection1.isChecked() && question4_selection2.isChecked())
             total_score++;
 
-        RadioGroup question5_selection = (RadioGroup) findViewById(R.id.question5_group);
-        int question5_answer = question5_selection.getCheckedRadioButtonId();
+        EditText question5_selection = (EditText) findViewById(R.id.question5_answer);
+        String question5_answer = question5_selection.getText().toString();
 
-        if(question5_answer == R.id.question5_option1)
+        if("Akkamahadevi".equalsIgnoreCase(question5_answer))
             total_score++;
 
-        Toast.makeText(this,"You have scored "+total_score+"/5",Toast.LENGTH_LONG).show();
+        if(total_score >= 3)
+          Toast.makeText(this,"Congratulations!! You have scored "+total_score+"/5",Toast.LENGTH_LONG).show();
+        else
+            Toast.makeText(this,"Try Again!! You have scored "+total_score+"/5",Toast.LENGTH_LONG).show();
+
 
     }
 

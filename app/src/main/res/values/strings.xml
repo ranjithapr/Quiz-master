@@ -75,4 +75,25 @@
        "Just Java order for Amy" where Amy is the user's name. [CHAR LIMIT=NONE]
      -->
      <string name="order_summary_email_subject">Just Java order for <xliff:g id="name" example="Amy">%s</xliff:g></string>
+     <string name="question1">1. Which is the first inscription in Kannada?</string>
+     <string name="question1_option1">Halmidi inscription</string>
+     <string name="question1_option2">Belur inscription</string>
+     <string name="question1_option3">Hampi inscription</string>
+     <string name="question1_option4">None of the above</string>
+     <string name="_2_question2">2. Who is called as AadiKavi in Kannada?</string>
+     <string name="question2_option1">Kuvempu</string>
+     <string name="question2_option2">Pampa</string>
+     <string name="question2_option3">Ranna</string>
+     <string name="question2_option4">None of the above</string>
+     <string name="question3">3. Name the first Kannada Empire?</string>
+     <string name="question3_option1">Vijayanagar Empire</string>
+     <string name="question3_option2">Pallava Empire</string>
+     <string name="question3_option3">Hoysala Empire</string>
+     <string name="question3_option4">None of the above</string>
+     <string name="question4">3. Select all Kannada RashtraKavis?</string>
+     <string name="question4_option1">Kuvempu</string>
+     <string name="question4_option2">D R bendre</string>
+     <string name="question4_option3">Masti Venkatesha</string>
+     <string name="question4_option4">M Govinda pai</string>
+     <string name="question5">5. Name the first Kannada Female Poet?</string>
 </resources>

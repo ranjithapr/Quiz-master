@@ -32,7 +32,7 @@
             style="@style/QuestionStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1. Which is the first inscription in Kannada?"/>
+            android:text="@string/question1"/>
 
         <RadioGroup
             android:id="@+id/question1_group"
@@ -45,22 +45,22 @@
                 android:id="@+id/question1_option1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Halmidi inscription"/>
+                android:text="@string/question1_option1"/>
             <RadioButton
                 android:id="@+id/question1_option2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Belur inscription"/>
+                android:text="@string/question1_option2"/>
             <RadioButton
                 android:id="@+id/question1_option3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hampi inscription"/>
+                android:text="@string/question1_option3"/>
             <RadioButton
                 android:id="@+id/question1_option4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="None of the above"/>
+                android:text="@string/question1_option4"/>
         </RadioGroup>
 
 
@@ -69,7 +69,7 @@
             style="@style/QuestionStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2. Who is called as AadiKavi in Kannada?"/>
+            android:text="@string/_2_question2"/>
 
         <RadioGroup
             android:id="@+id/question2_group"
@@ -82,22 +82,22 @@
                 android:id="@+id/question2_option1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kuvempu"/>
+                android:text="@string/question2_option1"/>
             <RadioButton
                 android:id="@+id/question2_option2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pampa"/>
+                android:text="@string/question2_option2"/>
             <RadioButton
                 android:id="@+id/question2_option3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ranna"/>
+                android:text="@string/question2_option3"/>
             <RadioButton
                 android:id="@+id/question2_option4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="None of the above"/>
+                android:text="@string/question2_option4"/>
         </RadioGroup>
 
 
@@ -106,7 +106,7 @@
             style="@style/QuestionStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3. Name the first Kannada Empire?"/>
+            android:text="@string/question3"/>
 
         <RadioGroup
             android:id="@+id/question3_group"
@@ -119,95 +119,71 @@
                 android:id="@+id/question3_option1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vijayanagar Empire"/>
+                android:text="@string/question3_option1"/>
             <RadioButton
                 android:id="@+id/question3_option2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pallava Empire"/>
+                android:text="@string/question3_option2"/>
             <RadioButton
                 android:id="@+id/question3_option3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hoysala Empire"/>
+                android:text="@string/question3_option3"/>
             <RadioButton
                 android:id="@+id/question3_option4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="None of the above"/>
+                android:text="@string/question3_option4"/>
         </RadioGroup>
 
         <TextView
-            android:id="@+id/question3"
+            android:id="@+id/question4"
             style="@style/QuestionStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="3. Name the first Kannada RashtraKavi?"/>
+            android:text="@string/question4"/>
 
-        <RadioGroup
-            android:id="@+id/question4_group"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            style="@style/OptionsStyle"
-            >
-            <RadioButton
+
+            <CheckBox
                 android:id="@+id/question4_option1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kuvempu"/>
-            <RadioButton
+                android:text="@string/question4_option1"
+                android:layout_marginLeft="@dimen/option_horizontal_margin"/>
+            <CheckBox
                 android:id="@+id/question4_option2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="D R bendre"/>
-            <RadioButton
+                android:text="@string/question4_option2"
+                android:layout_marginLeft="@dimen/option_horizontal_margin"/>
+            <CheckBox
                 android:id="@+id/question4_option3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masti Venkatesha"/>
-            <RadioButton
+                android:text="@string/question4_option3"
+                android:layout_marginLeft="@dimen/option_horizontal_margin"/>
+            <CheckBox
                 android:id="@+id/question4_option4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="M Govinda pai"/>
-        </RadioGroup>
+                android:text="@string/question4_option4"
+                android:layout_marginLeft="@dimen/option_horizontal_margin"/>
 
         <TextView
             android:id="@+id/question5"
             style="@style/QuestionStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="5. Name the first Kannada Female Poet?"/>
+            android:text="@string/question5"/>
 
-        <RadioGroup
-            android:id="@+id/question5_group"
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            style="@style/OptionsStyle"
-            >
-            <RadioButton
-                android:id="@+id/question5_option1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Akkamahadevi"/>
-            <RadioButton
-                android:id="@+id/question5_option2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="B Jaya"/>
-            <RadioButton
-                android:id="@+id/question5_option3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Kritika"/>
-            <RadioButton
-                android:id="@+id/question5_option4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="None of the above"/>
-        </RadioGroup>
+            android:id="@+id/question5_answer"
+            android:layout_marginLeft="@dimen/option_horizontal_margin"/>
+
+
 
 
         <RelativeLayout
