@@ -69,10 +69,13 @@ public class MainActivity extends AppCompatActivity {
             total_score++;
 
         CheckBox question4_selection1 = (CheckBox) findViewById(R.id.question4_option1);
-        CheckBox question4_selection2 = (CheckBox) findViewById(R.id.question4_option4);
+        CheckBox question4_selection4 = (CheckBox) findViewById(R.id.question4_option4);
 
+        CheckBox question4_selection3 = (CheckBox) findViewById(R.id.question4_option3);
+        CheckBox question4_selection2 = (CheckBox) findViewById(R.id.question4_option2);
 
-        if(question4_selection1.isChecked() && question4_selection2.isChecked())
+        if(question4_selection1.isChecked() && question4_selection4.isChecked() &&
+                !question4_selection3.isChecked() && ! question4_selection2.isChecked())
             total_score++;
 
         EditText question5_selection = (EditText) findViewById(R.id.question5_answer);
