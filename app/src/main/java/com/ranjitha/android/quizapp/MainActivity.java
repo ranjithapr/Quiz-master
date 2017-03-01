@@ -29,6 +29,8 @@ import android.widget.Toast;
 
 import java.text.NumberFormat;
 
+import static com.ranjitha.android.quizapp.R.id.question5_answer;
+
 /**
  * This app displays an order form to order coffee.
  */
@@ -78,8 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 !question4_selection3.isChecked() && ! question4_selection2.isChecked())
             total_score++;
 
-        EditText question5_selection = (EditText) findViewById(R.id.question5_answer);
-        String question5_answer = question5_selection.getText().toString();
+        String question5_answer = ((EditText) findViewById(R.id.question5_answer)).getText().toString();
 
         if("Akkamahadevi".equalsIgnoreCase(question5_answer))
             total_score++;
